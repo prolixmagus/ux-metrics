@@ -43,7 +43,7 @@ export default function Outcomes() {
                 <h1>{isMobile ? "Why UX Outcomes?" : "Why use Outcome-driven UX Metrics?"}</h1>
             </GreenArticle >
             <TestComponent >
-                <div>
+                <div className="test-component-spacing">
                     <h2>The most effective metrics tell compelling stories.</h2>
                     <p>Great metrics describe how you and your team are increasing the value of your products and services for customers, helping your business achieve its top priorities, and making the world better in the process.</p>
                     <p>For UX work, you want metrics showing how a great user experience has increased the value your customers and users receive. You want to show how investing in great UX has paid off by hitting business targets with great returns. And you want your metrics to describe how you’re improving the lives of your customers and users.

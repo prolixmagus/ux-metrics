@@ -6,7 +6,7 @@ import playButton2 from './playButton2.png'
 import './CalendarV2.css';
 import { formatToLocalTime, timezoneDropdown } from './CalendarDataV2';
 
-import { fetchCohort5 } from './CalendarDataV2'; // <--------- UPDATE
+import { fetchCohort6 } from './CalendarDataV2'; // <--------- UPDATE
 
 
 export default function CalendarV2() {
@@ -28,7 +28,7 @@ export default function CalendarV2() {
 
     useEffect(() => {
         const loadEvents = async () => {
-          const fetchedData = await fetchCohort5(); // <--------- UPDATE
+          const fetchedData = await fetchCohort6(); // <--------- UPDATE
 
           // Sort events by week number in ascending order
           const sortedEvents = fetchedData.sort((a, b) => a.week - b.week);

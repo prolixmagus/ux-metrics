@@ -67,11 +67,12 @@
 /* Styling for the Hero section */
 .hero {
   display: flex;
+  justify-content: space-between;
 }
 
 .hero > .programName {
   /* max-width: 10em; */
-  max-height: 10em;
+  max-height: 11em;
   height: auto;
   margin: 0 1em 0 0;
 }
@@ -103,7 +104,7 @@ h1 {
 
 .online-course {
   font-size: 1.2em;
-  margin-top: 1em;
+  margin-top: 0;
 }
 
 

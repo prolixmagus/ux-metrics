@@ -22,7 +22,7 @@ export default function Topics() {
                 <h1>Course Topics</h1>
             </GreenArticle >
             <TestComponent >
-                <div>
+                <div className="test-component-spacing">
                     <h2>Develop your own organization’s Outcome-driven UX Metrics.</h2>
                     <p>Join us to complete your journey with metrics that will <b>drive your organization to deliver better-designed products and services.</b></p>
                     <p>You won’t make up imaginary, over-simplified metrics for fake companies and products in this intensive. Instead, you (and your team, if you bring them along) will roll up your sleeves and identify the critical metrics for your products and services.</p>
@@ -229,7 +229,7 @@ export default function Topics() {
                 <div>
                     <h2>Ready to sign up for the Outcome-Driven UX Metrics Online Course?</h2>
                     <p>Join one of our upcoming cohorts to dive into these eight influential topics. Jared Spool will walk with you every step of the way.</p>
-                    <Hero />
+                    {/* <Hero /> */}
                 </div>
                 <VerticalCohortSelector />
             </TestComponent>

@@ -1,11 +1,14 @@
 .test-component {
-
     margin-bottom: 2em;
     width: 75%;
     position: relative;
     max-width: 60em;
 
     /* border: 1px solid red; */
+}
+
+.test-component-spacing {
+    padding-right: 1.5em;
 }
 
 .test-component button {

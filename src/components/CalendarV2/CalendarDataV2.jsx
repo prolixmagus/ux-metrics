@@ -54,6 +54,62 @@ const BASE_ID = process.env.REACT_APP_BASE_ID;
 
 
 
+/// COHORT 6 START ///
+/// COHORT 6 START ///
+/// COHORT 6 START ///
+
+const TABLE_ID_COHORT6 = process.env.REACT_APP_TABLE_ID_COHORT6;
+
+export const COHORT6_DATE_RANGE = [
+  {
+    start: `Mar 3`,
+    end: `Mar 26`,
+  }
+]
+
+export const fetchCohort6 = async () => {
+  const url = `https://api.airtable.com/v0/${BASE_ID}/${TABLE_ID_COHORT6}`;
+  const headers = { Authorization: `Bearer ${AIRTABLE_API_KEY}` };
+
+  try {
+    const response = await axios.get(url, { headers });
+    return response.data.records.map(record => ({
+      week: record.fields.Week,
+      start: record.fields.CohortOutput1,
+      end: record.fields.CohortOutput2,
+
+      name1: record.fields.Name1,
+      rich1: record.fields.RichText1,
+      date1: record.fields.DateOutput1,
+
+      watchStart1: record.fields.WatchStart1,
+      watchEnd1: record.fields.WatchEnd1,
+      coachStart1: record.fields.CoachStart1,
+      coachEnd1: record.fields.CoachEnd1,
+      
+
+      name2: record.fields.Name2,
+      rich2: record.fields.RichText2,
+      date2: record.fields.DateOutput2,
+
+      watchStart2: record.fields.WatchStart2,
+      watchEnd2: record.fields.WatchEnd2,
+      coachStart2: record.fields.CoachStart2,
+      coachEnd2: record.fields.CoachEnd2,
+    }));
+  } catch (error) {
+    console.error('Error fetching data from Airtable', error);
+    return [];
+  }
+};
+
+
+/// COHORT 6 END ///
+/// COHORT 6 END ///
+/// COHORT 6 END ///
+
+
+
 
 
 
@@ -79,6 +135,8 @@ export const fetchCohort5 = async () => {
     const response = await axios.get(url, { headers });
     return response.data.records.map(record => ({
       week: record.fields.Week,
+      start: record.fields.CohortOutput1,
+      end: record.fields.CohortOutput2,
 
       name1: record.fields.Name1,
       rich1: record.fields.RichText1,
@@ -136,6 +194,8 @@ export const fetchCohort4 = async () => {
     const response = await axios.get(url, { headers });
     return response.data.records.map(record => ({
       week: record.fields.Week,
+      start: record.fields.CohortOutput1,
+      end: record.fields.CohortOutput2,
 
       name1: record.fields.Name1,
       rich1: record.fields.RichText1,
@@ -394,7 +454,9 @@ export const timezones = [
   "Asia/Shanghai", // CST
   "Asia/Taipei", // HKT
   "Asia/Seoul", // KST
+  "Asia/Jakarta", // Indonesia ST
   "Asia/Kolkata", // IST
+  "Asia/Yerevan", // Armenia ST
   "Asia/Dubai", // GST
   "Australia/Melbourne", // AEDT
   "Pacific/Auckland", // NZDT

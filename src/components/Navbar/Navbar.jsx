@@ -13,7 +13,10 @@ export default function Navbar() {
         <section className="header">
             <div className="new-nav-test">
                 <nav className="header-nav">
+                <a href='https://www.centercentre.com'>
+
                     <img className="header-logo" src="/images/Center_Centre_Logo.png" alt="center centre logo" />
+                    </a>
 
                     <div className="hamburger" onClick={toggleMenu}>
 
@@ -30,9 +33,13 @@ export default function Navbar() {
                         <Link to="/outcomes">Why UX Outcomes?</Link>
                         <Link to="/teams">Team Pricing</Link>
 
-                        {/* UPDATE THE MONTH AFTER EACH COHORT */}
-                        <Link to="/cohort3">Join Next Cohort</Link>
-                        {/* UPDATE THE MONTH AFTER EACH COHORT */}
+                        
+                        {/* UPDATE THIS */}
+                        {/* UPDATE THIS */}
+                        <Link to="/cohort5">Join Next Cohort</Link>
+                        {/* UPDATE THIS */}
+                        {/* UPDATE THIS */}
+                        
                     </div>
                 </nav>
             </div>

@@ -6,7 +6,7 @@ import playButton2 from './playButton2.png'
 import './CalendarV2.css';
 import { formatToLocalTime, timezoneDropdown } from './CalendarDataV2';
 
-import { fetchCohort4, COHORT4_DATE_RANGE } from './CalendarDataV2'; // <--------- UPDATE
+import { fetchCohort4 } from './CalendarDataV2'; // <--------- UPDATE
 
 
 export default function CalendarV2() {
@@ -46,7 +46,7 @@ export default function CalendarV2() {
             <div className='scheduleTitle'>
                 <div className='courseSchedule-container'>
                     <h1>Course Schedule</h1>
-                    <h2>Cohort: {COHORT4_DATE_RANGE[0].start} - {COHORT4_DATE_RANGE[0].end}</h2>
+                    <h2>Cohort: {events[0]?.start} – {events[3]?.end}</h2>
                 </div>
                 
 
